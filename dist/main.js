@@ -1,8 +1,21 @@
+var count = 0;
 function updateTime () {
+	count++;
 	var time = document.getElementById('clock');
 	var date = new Date();
-	var now  = date.getHours().toString() + " : " + date.getMinutes().toString() 
+	
+	if (count <10) {
+		var now  = date.getHours().toString() + " : " + date.getMinutes().toString() 
 		+ " : " + date.getSeconds().toString();
+	} else if (count >=10 && count < 20) {
+		var now = date.getHours().toString(16) + " : " + date.getMinutes().toString(16)
+		+ " : " + date.getSeconds().toString(16);
+
+	} else if (count = 20) {
+		count = 0;
+		var now  = date.getHours().toString() + " : " + date.getMinutes().toString() 
+		+ " : " + date.getSeconds().toString();
+	}
 
 	time.innerHTML = now;
 }
