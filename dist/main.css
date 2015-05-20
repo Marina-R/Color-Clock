@@ -1,0 +1,21 @@
+section {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+}
+#clock {
+	height: 50px;
+	width: 370px;
+	font-size: 80px;
+	color: white;
+	margin: 0 auto;
+	padding-top: 300px;
+}
+
+#line {
+	height: 30px;
+	width: 15px;
+	color: white;
+	border-bottom: 2px solid white;
+	margin: 0 auto;
+}
